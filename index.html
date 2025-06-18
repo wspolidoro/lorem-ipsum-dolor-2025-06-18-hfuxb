@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum dolor</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="font-sans antialiased text-gray-900 bg-white">
+<body class="font-sans antialiased text-gray-900 bg-white scroll-smooth">
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold text-gray-900">Lorem ipsum</a>
+                <a href="https://wspolidoro.github.io/lorem-ipsum-dolor-2025-06-18-hfuxb" class="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors duration-300">Lorem ipsum</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Portfolio</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">About</a>
+                <a href="#services" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Services</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-gray-50 rounded transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -32,44 +47,147 @@
         <section class="pt-32 pb-24 bg-gradient-to-r from-gray-50 to-gray-100">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">Transform Your Vision Into Reality</h1>
-                    <p class="text-xl text-gray-600 mb-12 leading-relaxed">We create modern and minimalist solutions that help businesses thrive in the digital age.</p>
-                    <a href="#" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transform hover:scale-105 transition-all duration-300">Get Started</a>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">Transform Your Digital Presence Into Success</h1>
+                    <p class="text-xl text-gray-600 mb-12 leading-relaxed">Elevate your business with our cutting-edge digital solutions. We combine innovative design with powerful technology to help you achieve measurable results and stand out in today's competitive market.</p>
+                    <a href="#contact" class="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Start Your Journey Today</a>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="py-24 bg-white">
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-lg text-gray-700 leading-relaxed">Founded in 2015, Lorem ipsum emerged from a passion for creating exceptional digital experiences. What started as a small team of dedicated designers and developers has grown into a full-service digital agency, serving clients across multiple industries and continents.</p>
+                    <p class="text-lg text-gray-700 leading-relaxed">Our mission is to empower businesses through innovative digital solutions that drive real results. We believe in combining creativity with technical excellence, maintaining transparency in our processes, and fostering long-term partnerships with our clients. Our core values of innovation, integrity, and impact guide everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <div class="p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 bg-gray-900 rounded-lg mb-6"></div>
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="w-12 h-12 bg-gray-900 rounded-lg mb-6 flex items-center justify-center">
+                            <i class="fas fa-palette text-white text-xl"></i>
+                        </div>
                         <h3 class="text-xl font-bold mb-4">Web Design</h3>
-                        <p class="text-gray-600 leading-relaxed">Modern and minimalist designs that capture your brand's essence.</p>
+                        <p class="text-gray-600 leading-relaxed">Create stunning, user-centric websites that captivate your audience. Our designs are optimized for conversion and engagement, ensuring your digital presence makes a lasting impression.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 bg-gray-900 rounded-lg mb-6"></div>
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="w-12 h-12 bg-gray-900 rounded-lg mb-6 flex items-center justify-center">
+                            <i class="fas fa-code text-white text-xl"></i>
+                        </div>
                         <h3 class="text-xl font-bold mb-4">Development</h3>
-                        <p class="text-gray-600 leading-relaxed">Robust and scalable solutions built with cutting-edge technology.</p>
+                        <p class="text-gray-600 leading-relaxed">Build powerful, scalable web applications using cutting-edge technologies. Our solutions are engineered for performance, security, and seamless user experience across all devices.</p>
                     </div>
-                    <div class="p-8 rounded-2xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 bg-gray-900 rounded-lg mb-6"></div>
-                        <h3 class="text-xl font-bold mb-4">Branding</h3>
-                        <p class="text-gray-600 leading-relaxed">Strategic brand development that sets you apart from competitors.</p>
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="w-12 h-12 bg-gray-900 rounded-lg mb-6 flex items-center justify-center">
+                            <i class="fas fa-bullhorn text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+                        <p class="text-gray-600 leading-relaxed">Drive growth through strategic digital marketing campaigns. From SEO to social media, we help you reach your target audience and achieve measurable business results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"Lorem ipsum transformed our outdated website into a modern, high-converting platform. Our online sales increased by 150% within the first three months after launch."</p>
+                        <div class="font-semibold">Sarah Johnson</div>
+                        <div class="text-gray-600">CEO, TechStart Solutions</div>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"The team's attention to detail and technical expertise is unmatched. They delivered our project on time and within budget, exceeding all expectations."</p>
+                        <div class="font-semibold">Michael Chen</div>
+                        <div class="text-gray-600">CTO, Innovation Labs</div>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"Working with Lorem ipsum was a game-changer for our business. Their strategic approach to digital marketing helped us achieve a 200% increase in qualified leads."</p>
+                        <div class="font-semibold">Emily Rodriguez</div>
+                        <div class="text-gray-600">Marketing Director, Growth Co</div>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 mb-4">"The most professional and responsive team I've worked with. They truly understand modern web development and deliver results that matter."</p>
+                        <div class="font-semibold">David Smith</div>
+                        <div class="text-gray-600">Founder, Digital First</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">What is your typical project timeline?</h3>
+                        <p class="text-gray-600">Most projects are completed within 8-12 weeks, depending on scope and complexity. We provide detailed timelines during our initial consultation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">How do you handle project communication?</h3>
+                        <p class="text-gray-600">We use a dedicated project management system and provide weekly updates. You'll have a direct line to your project manager throughout the process.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">What is your pricing structure?</h3>
+                        <p class="text-gray-600">We offer customized pricing based on project requirements. Each proposal includes detailed breakdowns and milestone-based payment schedules.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">Do you provide ongoing support?</h3>
+                        <p class="text-gray-600">Yes, we offer various maintenance and support packages to ensure your digital assets remain secure and up-to-date after launch.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4">What technologies do you specialize in?</h3>
+                        <p class="text-gray-600">We work with modern frameworks and technologies including React, Vue.js, Node.js, and various CMS platforms, always choosing the best tools for each project.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section class="py-24 bg-gray-900 text-white">
-            <div class="container mx-auto px-6">
+        <section id="contact" class="py-24 bg-gray-900 text-white" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6 bg-gray-900/80 py-24 rounded-3xl">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Start Your Project?</h2>
-                    <p class="text-xl text-gray-300 mb-12">Let's create something amazing together.</p>
-                    <a href="#" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">Contact Us</a>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
+                    <p class="text-xl text-gray-300 mb-12">Let's create something extraordinary together. Schedule a free consultation today.</p>
+                    <a href="#" class="inline-block bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Get Started Now</a>
                 </div>
             </div>
         </section>
@@ -80,33 +198,34 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lorem ipsum</h3>
-                    <p class="text-gray-600">Modern solutions for modern businesses.</p>
+                    <p class="text-gray-600">Transforming businesses through innovative digital solutions.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
+                        <li><a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a></li>
+                        <li><a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms</a></li>
+                        <li><a href="https://wspolidoro.github.io/lorem-ipsum-dolor-2025-06-18-hfuxb/privacy.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://wspolidoro.github.io/lorem-ipsum-dolor-2025-06-18-hfuxb/terms.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://wspolidoro.github.io/lorem-ipsum-dolor-2025-06-18-hfuxb/blog.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Connect</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300 transform hover:scale-110">
                             <span class="sr-only">Twitter</span>
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                            <i class="fab fa-twitter text-xl"></i>
                         </a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300 transform hover:scale-110">
                             <span class="sr-only">LinkedIn</span>
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <i class="fab fa-linkedin text-xl"></i>
                         </a>
                     </div>
                 </div>
@@ -116,5 +235,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
